@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo - Área </title>
+</head>
+<body>
+    <script>
+        let tipo = prompt('Selecione qual forma ira calcular a área: Quadrado, Retângulo, Triângulo ou Circulo');
+        let lado;
+        let altura;
+        let base;
+        let resultado;
+        let pi = 3;
+        let raio;
+
+        switch (tipo) {
+            case 'Quadrado':
+            lado = parseFloat(prompt('Digite o valor do lado: '));
+            resultado = (lado * 2)
+                break;
+        
+            case 'Retângulo':
+            base = parseFloat(prompt('Digite o valor da base: '));
+            altura = parseFloat(prompt('Digite o valor da altura'));
+            resultado = (base * altura)
+                break;
+            
+            case 'Triângulo':
+            base = parseFloat(prompt('Digite o valor da base do triângulo: '));
+            altura = parseFloat(prompt('Digite o valor da altura do triângulo: '));
+            resultado = (base * altura / 2)
+                break;
+
+            case 'Circulo':
+            raio = parseFloat(prompt('(pi = 3)Digite o valor do raio: '));
+            resultado = (pi * (raio*2))
+                break;
+            default:
+            resultado = 0
+        }
+alert('O valor da área do' + tipo + 'é' + resultado)
+    </script>
+</body>
+</html>
